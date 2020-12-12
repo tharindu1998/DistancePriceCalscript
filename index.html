@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+
+<head>
+    <script>
+        function v1Distance() {
+            var v1, price1;
+            v1 = Number(document.getElementById("v1").value);
+            // v2=Number(document.getElementById("second").value);
+            price1 = 1500 + ((v1 - 30) * 28);
+            document.getElementById("answer1").value = price1;
+        }
+        function v2Distance1() {
+            var v2, price2, x;
+            x = 0;
+            y = 0;
+            a = 0;
+            b = 0;
+            c = 0;
+            d = 0;
+            v2 = Number(document.getElementById("v2").value);
+            if (v2 > 200) {
+                x = v2 - 200
+                y = x * 35
+                alert(JSON.stringify(y))
+                b = 100 * 39
+                d = 70 * 48
+                price2 = 2700 + y + b + d
+            }else{
+                alert("Please enter a number > 200")
+
+            }
+
+            document.getElementById("answer2").value = price2;
+        }
+        function v2Distance2() {
+            x = 0;
+            a = 0;
+            b = 0;
+            c = 0;
+            d = 0;
+            v3 = Number(document.getElementById("v3").value);
+            if (v3 < 200) {
+                a = v3 - 100
+                b = a * 39
+                alert(JSON.stringify(b))
+                price3 = 2700 + b + (70 * 48)
+            } else {
+                alert("Please enter a number b/w (101 - 200)")
+            }
+            document.getElementById("answer3").value = price3;
+        }
+        function v2Distance3() {
+            if (v4 < 100) {
+                v4 = Number(document.getElementById("v4").value);
+                price4 = 2700 + ((v4 - 30) * 48)
+            }else {
+                alert("Please enter a number less than 100")
+            }
+
+            document.getElementById("answer4").value = price4;
+        }
+        function v3Distance1() {
+            var v2, price2, x;
+            x = 0;
+            y = 0;
+            a = 0;
+            b = 0;
+            c = 0;
+            d = 0;
+            v2 = Number(document.getElementById("v5").value);
+            if (v2 > 200) {
+                x = v2 - 200
+                y = x * 50
+                alert(JSON.stringify(y))
+                b = 100 * 54
+                d = 70 * 70
+                price2 = 7000 + y + b + d
+            }else{
+                alert("Please enter a number > 200")
+
+            }
+            document.getElementById("answer5").value = price2;
+        }
+        function v3Distance2() {
+            x = 0;
+            a = 0;
+            b = 0;
+            c = 0;
+            d = 0;
+            v3 = Number(document.getElementById("v6").value);
+            if (v3 < 200) {
+                a = v3 - 100
+                b = a * 54
+                alert(JSON.stringify(b))
+                price3 = 7000 + b + (70 * 70)
+            } else {
+                alert("Please enter a number b/w (101 - 200)")
+            }
+            document.getElementById("answer6").value = price3;
+        }
+        function v3Distance3() {
+            if (v4 < 100) {
+                v4 = Number(document.getElementById("v7").value);
+                price4 = 7000 + ((v4 - 30) * 70)
+            }else {
+                alert("Please enter a number less than 100")
+            }
+
+            document.getElementById("answer7").value = price4;
+        }
+        function v4Distance1() {
+            var v2, price2, x;
+            x = 0;
+            y = 0;
+            a = 0;
+            b = 0;
+            c = 0;
+            d = 0;
+            v2 = Number(document.getElementById("v8").value);
+            if (v2 > 200) {
+                x = v2 - 200
+                y = x * 50
+                alert(JSON.stringify(y))
+                b = 100 * 55
+                d = 70 * 76
+                price2 = 7000 + y + b + d
+            }else{
+                alert("Please enter a number > 200")
+
+            }
+            document.getElementById("answer8").value = price2;
+        }
+        function v4Distance2() {
+            x = 0;
+            a = 0;
+            b = 0;
+            c = 0;
+            d = 0;
+            v3 = Number(document.getElementById("v9").value);
+            if (v3 < 200) {
+                a = v3 - 100
+                b = a * 55
+                alert(JSON.stringify(b))
+                price3 = 7000 + b + (70 * 76)
+            } else {
+                alert("Please enter a number b/w (101 - 200)")
+            }
+            document.getElementById("answer9").value = price3;
+        }
+        function v4Distance3() {
+            if (v4 < 100) {
+                v4 = Number(document.getElementById("v10").value);
+                price4 = 7000 + ((v4 - 30) * 70)
+            }else {
+                alert("Please enter a number less than 100")
+            }
+
+            document.getElementById("answer10").value = price4;
+        }
+    </script>
+</head>
+
+<body>
+    <h2>7.5 FT - LCL(other)</h2>
+    <br>
+    Enter the Vehicle Distance : <input id="v1">
+    <!-- Enter the Second number: <input id="second"> -->
+    <button onclick="v1Distance()">GetV1Price</button>
+    <input id="answer1">
+    <br>
+    <br>
+    <h2>14.5 FT - LCL(other)</h2>
+    <br>
+    <p style="font-style: italic;"><b>If distance is greater than 200 use this</b></p>
+    Enter the Vehicle Distance : <input id="v2">
+    <button onclick="v2Distance1()">GetV2Price</button>
+    <input id="answer2">
+    <br>
+    <p style="font-style: italic;"><b>If distance is b/w (101 -200) use this</b></p>
+    Enter the Vehicle Distance : <input id="v3">
+    <button onclick="v2Distance2()">GetV2Price</button>
+    <input id="answer3">
+    <br>
+    <p style="font-style: italic;"><b>If distance is less than 100 use this</b></p>
+    Enter the Vehicle Distance : <input id="v4">
+    <button onclick="v2Distance3()">GetV2Price</button>
+    <input id="answer4">
+    <br>
+    <br>
+    <h2>20 FT - LCL(other)</h2>
+    <br>
+    <p style="font-style: italic;"><b>If distance is greater than 200 use this</b></p>
+    Enter the Vehicle Distance : <input id="v5">
+    <button onclick="v3Distance1()">GetV3Price</button>
+    <input id="answer5">
+    <br>
+    <p style="font-style: italic;"><b>If distance is b/w (101 -200) use this</b></p>
+    Enter the Vehicle Distance : <input id="v6">
+    <button onclick="v3Distance2()">GetV3Price</button>
+    <input id="answer6">
+    <br>
+    <p style="font-style: italic;"><b>If distance is less than 100 use this</b></p>
+    Enter the Vehicle Distance : <input id="v7">
+    <button onclick="v3Distance3()">GetV3Price</button>
+    <input id="answer7">
+    <br>
+    <br>
+    <h2>24 FT - Lorry</h2>
+    <br>
+    <p style="font-style: italic;"><b>If distance is greater than 200 use this</b></p>
+    Enter the Vehicle Distance : <input id="v8">
+    <button onclick="v4Distance1()">GetV4Price</button>
+    <input id="answer8">
+    <br>
+    <p style="font-style: italic;"><b>If distance is b/w (101 -200) use this</b></p>
+    Enter the Vehicle Distance : <input id="v9">
+    <button onclick="v4Distance2()">GetV4Price</button>
+    <input id="answer9">
+    <br>
+    <p style="font-style: italic;"><b>If distance is less than 100 use this</b></p>
+    Enter the Vehicle Distance : <input id="v10">
+    <button onclick="v4Distance3()">GetV4Price</button>
+    <input id="answer10">
+</body>
+
+</html>
